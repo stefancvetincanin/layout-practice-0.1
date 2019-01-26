@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* KRAJ RESETA */
+
+header {
+    background: url("http://via.placeholder.com/1920x600");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Da se slika prilagodi velicini ekrana */
+    height: 600px;
+    width: 100%;
+    /* display: block; - nepotrebno */
+    position: relative;
+}
+
+header > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
+    /* width: 600px; */
+    text-align: center;
+}
+
+/* header > div > h1, p {
+    text-align: center;
+} */
+
+header h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+header p{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+header a {
+    display: inline-block;
+    /* width: 220px; */
+    /* height: 40px; */
+    margin: 20px 0 0;
+    border: 2px inset black;
+    text-align: center;
+    line-height: 2;
+    border-radius: 4px;
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Arial", sans-serif;
+    padding: 3px 25px;
+    transition: all 600ms linear 0s;
+    -webkit-transition: all 600ms linear 0s;
+}
+
+header a:hover {
+    background-color: rgba(80, 80, 80, 0.4);
+    color: white;
+}
+
+.section1 {
+    /* height: 270px; */
+    background-color: rgb(160, 160, 160);
+    text-align: center;
+    padding: 80px 0;
+}
+
+.section1 > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section1 h2 {
+    font-size: 40px;
+    padding: 0 0 30px;
+}
+
+.section1 p {
+    font: italic small-caps 700 18px/1.33 Verdana, sans-serif;
+    /* padding: 0 0 80px; */
+}
+
+.section2 {
+    text-align: center;
+    padding: 50px 0;
+    
+}
+
+/* Experimental code, please ignore */
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* padding: 50px 0 0; */
+}
+
+.col1-2 {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+/* .col1-2 > div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+} */
+
+.sec2-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sec2-table {
+    display: table;
+    width: 100%;
+}
+
+.sec2-left, .sec2-right {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.sec2-left p, .sec2-right p {
+    padding: 0 22px;
+}
+
+.sec2-table img, .col1-2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: all 1s ease-out 0s;
+}
+
+.section3 {
+    background: url("http://via.placeholder.com/1920x800");
+    background-attachment: fixed;
+    height: 500px;
+    display: table;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: 0 0 50px; */
+}
+
+.section3 div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.section3 h2 {
+    font: small-caps normal 50px Verdana, sans-serif;
+}
+
+.section4 {
+    padding: 50px 0;
+}
+
+.section4 > .row > .col1-2:last-of-type {
+    padding: 20px 50px;
+}
+
+label {
+    line-height: 2;
+}
+
+input {
+    border-radius: 3px;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    font: small-caps 18px/1.33 monospace;
+    padding: 0 0 0 8px;
+}
+
+input[type=email] {
+    font: 18px/1.33 monospace;
+}
+
+textarea {
+    border-radius: 3px;
+    border-style: inset;
+    border-width: 2px;
+    display: inline-block;
+    width: 100%;
+    font: 18px monospace;
+    padding: 0 0 0 8px;
+}
+
+textarea:focus {
+    border: 2px solid navy;
+}
+
+input[type=submit], input[type=reset] {
+    padding: 4px 25px;
+    margin: 15px 8px 0 0;
+    border-style: outset;
+    text-transform: uppercase;
+    transition: all 400ms linear 0s;
+    -webkit-transition: all 400ms linear 0s;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    border-style: inset;
+    background-color: grey;
+    color: navy;
+    cursor: pointer;
+}
+
+.col1-2 > img:hover {
+    opacity: .4;
+    cursor: -webkit-grab;
+}
+
+/* fieldset {
+    border-radius: 3px;
+    padding: 9px;
+}
+
+legend {
+    font: 16px Arial;
+} */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 991px) {
+    header h1 {
+        font-size: 44px;
+    }
+
+    .section1 h2 {
+        font-size: 42px;
+    }
+
+    .section1 {
+        padding: 40px;
+    }
+
+    .section3 h2 {
+        font-size: 42px;
+    }
+
+    .section3 {
+        height: 440px;
+    }
+
+    .section4 > .row > .col1-2:last-of-type {
+        padding: 0 30px;
+    }
+
+    header {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header > div {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size:16px;
+    }
+
+    .section1 h2 {
+        font-size: 22px;
+    }
+
+    .section1 p {
+        font-size:14px;
+    }
+
+    .section1 {
+        padding: 25px;
+    }
+
+    .section3 h2 {
+        font-size: 24px;
+    }
+
+    .section3 {
+        background-attachment: scroll;
+    }
+
+    .col1-2 {
+        float: none;
+        width: 100%;
+        /* margin: 0 auto; */
+        position: relative;
+    }
+
+    .col1-2 img {
+        margin: 0 auto;
+        opacity: 0.8;
+    }
+
+    .sec2-left, .sec2-right {
+        display: block;
+        width: 100%;
+        /* vertical-align: middle; */
+        /* height: auto; */
+    }
+
+    .section3 {
+        height: 380px;
+    }
+
+    .section4 {
+        padding: 0 0 50px;
+    }
+
+    .section2 {
+        padding: 0;
+        /* width: 100%; */
+    }
+
+    .sec2-left p, .sec2-right p {
+        padding: 50px 12px;
+    }
+
+    header {
+        /* background: url("http://via.placeholder.com/1920x600");
+        background-position: center;
+        background-repeat: no-repeat; */
+        background-size: cover; /*Da se slika prilagodi velicini ekrana*/
+        height: 400px;
+        /* width: 100%; */
+        /* display: block; - nepotrebno */
+        /* position: relative; */
+    }
+
+    header > div {
+        /* position: absolute;
+        left: 50%;
+        top: 50%; */
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        /* width: 600px; */
+        /* text-align: center; */
+    }
+
+    .sec2-table {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    /* .sec2-table img, .col1-2 img {
+        width: 100%;
+         padding: 0 50px;
+    } */
+
+    .section4 > .row > .col1-2:last-of-type {
+        padding: 20px 40px 0;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
