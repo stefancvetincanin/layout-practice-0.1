@@ -1,2 +1,2 @@
 # layout-practice-0.1
-Simple css layout.
+Simple responsive css layout.
